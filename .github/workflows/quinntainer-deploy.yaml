@@ -1,0 +1,21 @@
+name: Deploy
+
+on:
+  push:
+    branches: 
+    - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    concurrency: deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: nektos/quinntainer-action
+      with: 
+        aws-region: us-west-2
+        role-to-assume: arn:aws:iam::861766428188:role/quinntainer-cplee-hello-container
+
