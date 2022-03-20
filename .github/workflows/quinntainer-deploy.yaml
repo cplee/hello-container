@@ -17,5 +17,6 @@ jobs:
     - uses: nektos/quinntainer-action@main
       with: 
         aws-region: us-west-2
-        role-to-assume: arn:aws:iam::861766428188:role/quinntainer-cplee-hello-container
+        role-to-assume: arn:aws:iam::861766428188:role/quinntainer-gha-cplee-hello-container
+        port: 80
 
