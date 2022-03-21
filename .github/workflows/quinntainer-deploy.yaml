@@ -18,5 +18,5 @@ jobs:
       with: 
         aws-region: us-west-2
         role-to-assume: arn:aws:iam::861766428188:role/quinntainer-gha-cplee-hello-container
-        port: 8080
+        port: 80
 
