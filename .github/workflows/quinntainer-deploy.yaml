@@ -14,7 +14,7 @@ jobs:
     concurrency: deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: nektos/quinntainer-action@main
+    - uses: nektos/quinntainer@main
       with: 
         aws-region: us-west-2
         role-to-assume: arn:aws:iam::861766428188:role/quinntainer-gha-cplee-hello-container
